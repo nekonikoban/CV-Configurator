@@ -377,6 +377,66 @@ nav {
   padding-right: 10%;
 }
 
+/**POPUP*/
+.popup-rectangle {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+  margin-top: 20px;
+  margin-left: calc(100vw - 55vw);
+	width: 50px;
+	height: 50px;
+  z-index: 10;
+	background: #2D3142;
+	transform: scale(0);
+	border-radius: 50%;
+	color: #009b34;
+	opacity: 0;
+	overflow: hidden;
+	animation: scale-in .3s ease-out forwards,
+		expand .35s .25s ease-out forwards;
+}
+
+.popup-text {
+	display: flex;
+	align-items: center;
+	padding: 0 16px;
+	font-family: Orbitron, sans-serif;
+	font-size: 16px;
+	animation: fade-in .7s ease-in forwards;
+}
+
+@keyframes scale-in {
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes expand {
+	50% {
+		width: 350px;
+		border-radius: 6px;
+	}
+	100% {
+		width: 300px;
+		border-radius: 4px;
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,.2),
+								0px 1px 1px 0px rgba(0,0,0,.14),
+								0px 3px 3px -1px rgba(0,0,0,.12);
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: .8;
+	}
+}
+
 /**SCROLLBAR*/
 ::-webkit-scrollbar {
   height: 4px;

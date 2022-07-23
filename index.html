@@ -11,6 +11,13 @@
 </head>
 <body>
 	<div id="page" style="display: none;">
+			<!--POPUP NOTIFICATION-->
+		<div id="popup-notofication" class="popup-rectangle">
+			<div id="popup-text" class="popup-text">
+				<!-- <i class="fa-solid fa-square-info"></i> -->
+				<span>&nbsp;&nbsp;This is a test notification</span>
+			</div>
+		</div>
 		<!--NAV VISIBLE-->
 		<div id="nav-bar" class="nav-left visible-xs">
 			<div class="button" id="nav-btn">
@@ -31,7 +38,7 @@
 				</div>
 			</div>
 			</nav>
-			<a href="https://codepen.io/dario1994/" class="ua" target="_blank">
+			<a href="https://github.com/nekonikoban" class="ua" target="_blank">
 			<i class="fa fa-user"></i>
 			</a>
 			<!--CV CONTENT-->
@@ -43,12 +50,12 @@
 						<img id="my-image" src="https://i.ibb.co/HXCcChL/me.png" alt="full-name">
 					</div>
 					<div class="cv-personalinfo">
-						<div class="cv-fullname"><span class="cv-fullname" id="cv-fullname">Dario Damjanovic</span></div>
+						<div class="cv-fullname"><span class="cv-fullname content-editable" id="cv-fullname" contenteditable="true">Dario Damjanovic</span></div>
 						<div class="cv-subinfo">
-							<div style="padding-left: 15px; padding-bottom: 10px;"><i class="fa-solid fa-laptop-file fa-xl"></i> SOFTWARE DEVELOPER, 28 yrs old</div>
-							<div style="padding-left: 15px; padding-bottom: 10px;"><i class="fa-solid fa-location-dot fa-xl"></i> Bosnia &amp; Herzegovina, Sarajevo</div> 
-							<div style="padding-left: 15px; padding-bottom: 10px;"><i class="fa-solid fa-mobile-screen fa-xl"></i> +387 61 369 362</div> 
-							<div style="padding-left: 15px; padding-bottom: 10px;"><i class="fa-solid fa-at fa-xl"></i> damjanovic.dario@email.com</div>
+							<div style="padding-left: 15px; padding-bottom: 10px;" id="cv-profession" class="content-editable"><i class="fa-solid fa-laptop-file fa-xl"></i> SOFTWARE DEVELOPER, 28 yrs old</div>
+							<div style="padding-left: 15px; padding-bottom: 10px;" id="cv-country" class="content-editable"><i class="fa-solid fa-location-dot fa-xl"></i> Bosnia &amp; Herzegovina, Sarajevo</div> 
+							<div style="padding-left: 15px; padding-bottom: 10px;" id="cv-phone" class="content-editable"><i class="fa-solid fa-mobile-screen fa-xl"></i> +387 61 369 362</div> 
+							<div style="padding-left: 15px; padding-bottom: 10px;" id="cv-email" class="content-editable"><i class="fa-solid fa-at fa-xl"></i> damjanovic.dario@email.com</div>
 						</div>
 					</div>
 				</div>
@@ -151,7 +158,7 @@
 		<!--NAVBAR-->
 		<div class="sidebar">
 			<ul class="sidebar-list">
-			<li class="sidebar-item"><a href="#" class="sidebar-anchor" id="name">Configure CV</a></li>
+			<li class="sidebar-item"><a href="#" class="sidebar-anchor" id="configure">Configure CV</a></li>
 			<li class="sidebar-item"><a href="#" class="sidebar-anchor" id="objective">Career Objective</a></li>
 			<li class="sidebar-item"><a href="#" class="sidebar-anchor" id="skills">Technical Skills</a></li>
 			<li class="sidebar-item"><a href="#" class="sidebar-anchor" id="experience">Experience</a></li>
@@ -159,6 +166,7 @@
 			<div class="list-y-spacer"></div>
 			<li class="sidebar-item"><a href="#" class="sidebar-anchor" id="save">Save Document</a></li>
 			<li class="sidebar-item"><a href="#" class="sidebar-anchor" id="print">Print Document</a></li>
+			<li class="sidebar-item"><a href="#" class="sidebar-anchor" id="download">Download Code</a></li>
 			</ul>
 		</div>
 	</div>
