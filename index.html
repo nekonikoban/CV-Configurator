@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CV Configurator</title>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -47,8 +47,18 @@
 				<div class="cv-header">
 					<!--HEADER IMAGE-->
 					<div class="cv-photowrapper">
+						<div class="avatar-wrapper">
+							<!--https://i.ibb.co/VLvgDVk/avatar-unisex.png-->
+							<img class="profile-pic" src="https://i.ibb.co/HXCcChL/me.png" alt="my-image" />
+							<div class="upload-button">
+								<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+							</div>
+							<input class="file-upload" type="file" accept="image/*"/>
+						</div>	
+					</div>				
+					<!-- <div class="cv-photowrapper">
 						<img id="my-image" src="https://i.ibb.co/HXCcChL/me.png" alt="full-name">
-					</div>
+					</div> -->
 					<div class="cv-personalinfo">
 						<div class="cv-fullname"><span class="cv-fullname content-editable" id="cv-fullname" class="content-editable">Dario Damjanovic</span></div>
 						<div class="cv-subinfo">
@@ -65,7 +75,7 @@
 					<div class="cv-blockwrapper" class="content-editable">
 						<p class="cv-title">Career Objective </p>
 						<p id="cv-objective" class="cv-content content-editable" style="padding-left: 5% !important;">To further my knowledge on software and web application development techniques and life cycles, be able to contribute and work on a meaningful and purposeful project, and be a part of a productive team with similar aspirations.
-						The keyword is teamwork which is hard to find I will use evey means possible, and this opportunity to present myself as team player who can contribute more then average, which is the purpose of writing this CV.</p>
+						The keyword is teamwork which is hard to find I will use evey means possible, and this opportunity to present myself as team player who can contribute more then average, which is the main purpose in writing this CV.</p>
 					</div>
 					<div class="list-y-spacer"></div>
 					<!--TECH SKILLS BLOCK-->
