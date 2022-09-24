@@ -329,6 +329,15 @@ nav {
 
 @media (max-width: 768px) {
 
+  .sidebar {
+    width: 50%;
+    font-size: 12px;
+  }
+  
+  .sidebar-list {
+    text-align: start;
+  }
+
   #cv-title {
     padding-left: 0% !important;
   }
