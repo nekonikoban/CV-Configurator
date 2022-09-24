@@ -327,10 +327,39 @@ nav {
   transition: all 1s ease;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 768px) {
+
+  #cv-title {
+    padding-left: 0% !important;
+  }
+
+  #cv-objective {
+    padding-left: 0% !important;
+  }
+
+  .cv-header {
+    display: block !important;
+    padding-left: 0% !important;
+  }
+
+  .cv-content {
+    padding-right: 20% !important;
+  }
+
+  .cv-personalinfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0%;
+  }
+
+  .cv-blockwrapper {
+    display: block !important;
+  }
+  
   .nav-list {
     display: block;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -415,6 +444,10 @@ nav {
 .cv-blockwrapper {
   display: flex;
   flex-direction: row;
+}
+
+#cv-title {
+  padding-left: 10% ;
 }
 
 .cv-title {
