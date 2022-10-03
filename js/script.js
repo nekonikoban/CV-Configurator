@@ -12,7 +12,7 @@ $(document).ready(function() {
 	const loader = $("#loader")
 
 	const sbar = $("#nav-bar")
-	const sbarBtn = $("#nav-btn")
+	const sbarBtn = $("#nav-btn-hidden")
 	const sbarConfigure = $("#configure")
 	const sbarObjective = $("#objective")
 	const sbarSkills = $("#skills")
@@ -89,8 +89,11 @@ $(document).ready(function() {
 		 	showNotification("Edit Enabled")
 		else showNotification("Edit Disabled")	
 	}
+	
 
 	/**SIDEBAR LISTENERS */
+	  $(sbarBtn).on("click tap", function() {
+	  })
 	  $(sbarObjective).on("click tap", function() {
 		scrollTo(this)
 	  })
